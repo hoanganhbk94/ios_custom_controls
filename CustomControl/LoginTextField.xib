@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginTextField" customModule="CustomControl" customModuleProvider="target">
+            <connections>
+                <outlet property="textField" destination="Ztv-Il-vEr" id="Yb8-lX-x0R"/>
+                <outlet property="titleLabel" destination="zMy-Xy-vaC" id="3yj-vz-NQN"/>
+                <outlet property="underLineView" destination="OaB-zB-TUK" id="5OZ-9l-KqG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="368" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zMy-Xy-vaC">
+                    <rect key="frame" x="0.0" y="1" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ztv-Il-vEr">
+                    <rect key="frame" x="0.0" y="32" width="368" height="17"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OaB-zB-TUK">
+                    <rect key="frame" x="0.0" y="49" width="368" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="WUr-87-IOG"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Ztv-Il-vEr" secondAttribute="trailing" id="49E-cs-gXF"/>
+                <constraint firstItem="Ztv-Il-vEr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="FS2-Jc-GsL"/>
+                <constraint firstItem="OaB-zB-TUK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="SSb-FQ-OrP"/>
+                <constraint firstItem="zMy-Xy-vaC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="STk-Dw-D34"/>
+                <constraint firstItem="Ztv-Il-vEr" firstAttribute="top" secondItem="zMy-Xy-vaC" secondAttribute="bottom" constant="10" id="fer-NU-wD4"/>
+                <constraint firstAttribute="bottom" secondItem="OaB-zB-TUK" secondAttribute="bottom" id="jDq-71-hb9"/>
+                <constraint firstAttribute="trailing" secondItem="OaB-zB-TUK" secondAttribute="trailing" id="piN-p1-r0W"/>
+                <constraint firstItem="OaB-zB-TUK" firstAttribute="top" secondItem="Ztv-Il-vEr" secondAttribute="bottom" id="tFx-7p-tcu"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="58" y="62"/>
+        </view>
+    </objects>
+</document>
