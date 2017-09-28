@@ -17,6 +17,10 @@
 		5BD7CC661F7BF900006785BE /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD7CC651F7BF900006785BE /* Enums.swift */; };
 		5BD7CC681F7C01D6006785BE /* EmailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD7CC671F7C01D6006785BE /* EmailTextField.swift */; };
 		5BD7CC6A1F7C01F0006785BE /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD7CC691F7C01F0006785BE /* PasswordTextField.swift */; };
+		5BE905E01F7CD3A6003E2E23 /* RatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE905DE1F7CD3A6003E2E23 /* RatingViewController.swift */; };
+		5BE905E11F7CD3A6003E2E23 /* RatingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BE905DF1F7CD3A6003E2E23 /* RatingViewController.xib */; };
+		5BE905E31F7CD448003E2E23 /* RatingStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE905E21F7CD448003E2E23 /* RatingStarView.swift */; };
+		5BE905E51F7CD451003E2E23 /* RatingStarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BE905E41F7CD451003E2E23 /* RatingStarView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		5BD7CC651F7BF900006785BE /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		5BD7CC671F7C01D6006785BE /* EmailTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailTextField.swift; sourceTree = "<group>"; };
 		5BD7CC691F7C01F0006785BE /* PasswordTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
+		5BE905DE1F7CD3A6003E2E23 /* RatingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingViewController.swift; sourceTree = "<group>"; };
+		5BE905DF1F7CD3A6003E2E23 /* RatingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RatingViewController.xib; sourceTree = "<group>"; };
+		5BE905E21F7CD448003E2E23 /* RatingStarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingStarView.swift; sourceTree = "<group>"; };
+		5BE905E41F7CD451003E2E23 /* RatingStarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RatingStarView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +88,8 @@
 			children = (
 				5BD7CC5C1F7BF54F006785BE /* ViewController.swift */,
 				5BD7CC5D1F7BF54F006785BE /* ViewController.xib */,
+				5BE905DE1F7CD3A6003E2E23 /* RatingViewController.swift */,
+				5BE905DF1F7CD3A6003E2E23 /* RatingViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -91,6 +101,8 @@
 				5BD7CC621F7BF6DD006785BE /* LoginTextField.xib */,
 				5BD7CC671F7C01D6006785BE /* EmailTextField.swift */,
 				5BD7CC691F7C01F0006785BE /* PasswordTextField.swift */,
+				5BE905E21F7CD448003E2E23 /* RatingStarView.swift */,
+				5BE905E41F7CD451003E2E23 /* RatingStarView.xib */,
 			);
 			name = CustomViews;
 			sourceTree = "<group>";
@@ -166,6 +178,8 @@
 				5BD7CC631F7BF6DD006785BE /* LoginTextField.xib in Resources */,
 				5BD7CC5F1F7BF54F006785BE /* ViewController.xib in Resources */,
 				5BD7CC501F7BF4C1006785BE /* Assets.xcassets in Resources */,
+				5BE905E11F7CD3A6003E2E23 /* RatingViewController.xib in Resources */,
+				5BE905E51F7CD451003E2E23 /* RatingStarView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,11 +191,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BD7CC611F7BF6CB006785BE /* LoginTextField.swift in Sources */,
+				5BE905E31F7CD448003E2E23 /* RatingStarView.swift in Sources */,
 				5BD7CC5E1F7BF54F006785BE /* ViewController.swift in Sources */,
 				5BD7CC6A1F7C01F0006785BE /* PasswordTextField.swift in Sources */,
 				5BD7CC681F7C01D6006785BE /* EmailTextField.swift in Sources */,
 				5BD7CC661F7BF900006785BE /* Enums.swift in Sources */,
 				5BD7CC491F7BF4C0006785BE /* AppDelegate.swift in Sources */,
+				5BE905E01F7CD3A6003E2E23 /* RatingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +351,7 @@
 				5BD7CC591F7BF4C1006785BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

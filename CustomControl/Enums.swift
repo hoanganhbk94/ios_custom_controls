@@ -14,3 +14,12 @@ enum InvalidInputError: Error {
     case emailInvalid
     case passwordInvalid
 }
+
+
+enum RatingStatus: Int {
+    case veryBad = 0
+    case bad
+    case good
+    case veryGood
+    case excellent
+}

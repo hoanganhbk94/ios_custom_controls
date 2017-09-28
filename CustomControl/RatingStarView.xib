@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RatingStarView" customModule="CustomControl" customModuleProvider="target">
+            <connections>
+                <outlet property="statusLabel" destination="CZe-iA-uJt" id="Edh-3C-1P2"/>
+                <outletCollection property="arrayButtons" destination="iU2-GX-lgS" collectionClass="NSMutableArray" id="bhh-Qj-7Oh"/>
+                <outletCollection property="arrayButtons" destination="Wk7-hi-2B0" collectionClass="NSMutableArray" id="4Jd-qu-dZn"/>
+                <outletCollection property="arrayButtons" destination="XuA-XG-UtC" collectionClass="NSMutableArray" id="UB7-9R-WCw"/>
+                <outletCollection property="arrayButtons" destination="ta6-xQ-ABh" collectionClass="NSMutableArray" id="Gvd-fM-AU5"/>
+                <outletCollection property="arrayButtons" destination="6Nh-b4-rIv" collectionClass="NSMutableArray" id="56Y-dN-wcl"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZe-iA-uJt">
+                    <rect key="frame" x="99" y="0.0" width="42" height="20.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20.5" id="4se-AV-g6Z"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="qxV-gN-Xzv">
+                    <rect key="frame" x="0.0" y="20.5" width="240" height="39.5"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iU2-GX-lgS">
+                            <rect key="frame" x="0.0" y="0.0" width="44" height="39.5"/>
+                            <state key="normal" image="img_star"/>
+                            <connections>
+                                <action selector="ratingButtonAction:" destination="-1" eventType="touchUpInside" id="jdw-66-E1T"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wk7-hi-2B0">
+                            <rect key="frame" x="49" y="0.0" width="44" height="39.5"/>
+                            <state key="normal" image="img_star"/>
+                            <connections>
+                                <action selector="ratingButtonAction:" destination="-1" eventType="touchUpInside" id="igT-7Q-8xf"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XuA-XG-UtC">
+                            <rect key="frame" x="98" y="0.0" width="44" height="39.5"/>
+                            <state key="normal" image="img_star"/>
+                            <connections>
+                                <action selector="ratingButtonAction:" destination="-1" eventType="touchUpInside" id="yvR-e8-VNG"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ta6-xQ-ABh">
+                            <rect key="frame" x="147" y="0.0" width="44" height="39.5"/>
+                            <state key="normal" image="img_star"/>
+                            <connections>
+                                <action selector="ratingButtonAction:" destination="-1" eventType="touchUpInside" id="NrE-q5-0Ry"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Nh-b4-rIv">
+                            <rect key="frame" x="196" y="0.0" width="44" height="39.5"/>
+                            <state key="normal" image="img_star"/>
+                            <connections>
+                                <action selector="ratingButtonAction:" destination="-1" eventType="touchUpInside" id="VWJ-zL-eTa"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="0.4232287837" green="0.4642434513" blue="0.75185068160000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="qxV-gN-Xzv" secondAttribute="trailing" id="0xk-PB-Z7O"/>
+                <constraint firstItem="qxV-gN-Xzv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="4X1-HS-j1c"/>
+                <constraint firstAttribute="bottom" secondItem="qxV-gN-Xzv" secondAttribute="bottom" id="Ah5-SC-ffl"/>
+                <constraint firstItem="CZe-iA-uJt" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Eu9-md-eoI"/>
+                <constraint firstItem="CZe-iA-uJt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Z1j-hs-aTB"/>
+                <constraint firstItem="qxV-gN-Xzv" firstAttribute="top" secondItem="CZe-iA-uJt" secondAttribute="bottom" id="toi-1D-aes"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-114" y="175"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="img_star" width="115" height="109"/>
+    </resources>
+</document>

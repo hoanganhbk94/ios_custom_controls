@@ -17,6 +17,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.navigationController?.isNavigationBarHidden = true
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.emailTextField.text = "hoanganhbk94@gmail.com"
+        self.passwordTextField.text = "123456"
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,6 +46,8 @@ class ViewController: UIViewController {
     func didLogin(email: String, password: String) {
         if email == "hoanganhbk94@gmail.com" && password == "123456" {
             print("Login success")
+            let ratingViewController = RatingViewController(nibName: "RatingViewController", bundle: nil)
+            self.navigationController?.pushViewController(ratingViewController, animated: true)
         } else {
             print("Email or password is wrong")
         }
